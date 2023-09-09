@@ -1,0 +1,17 @@
+CREATE DATABASE MinhaEmpresa;
+
+USE MinhaEmpresa;
+
+CREATE TABLE Clientes (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(255),
+    Sobrenome VARCHAR(255),
+    Endereco VARCHAR(255),
+    Telefone VARCHAR(20)
+);
+
+INSERT INTO Clientes (Nome, Sobrenome, Endereco, Telefone)
+VALUES
+    ('João', 'Silva', 'Rua da Amizade, 123', '(11) 1234-5678'),
+    ('Maria', 'Santos', 'Avenida Principal, 456', '(22) 9876-5432'),
+    ('Pedro', 'Almeida', 'Rua das Flores, 789', '(33) 5555-9999');
